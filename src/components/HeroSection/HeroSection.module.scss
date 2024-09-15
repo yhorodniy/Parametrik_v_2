@@ -1,21 +1,20 @@
 .heroSection {
-    padding-top: 20px;
-    height: 750px;
+    padding: 1.25rem 0 5rem;
     background-color: #ffffff;
 
     & .navigationList {
-        padding-top: 18px;
+        padding-top: 1rem;
         & li {
             display: inline-block;
-            margin-left: 18px;
-            font-size: 14px;
+            margin-left: 1vw;
+            font-size: 0.875rem;
             font-weight: 400;
 
             &:not(:last-child) {
                 color: #C6C8CF;
                 &::after {
                     content: '>';
-                    margin-left: 10px;
+                    margin-left: 1vw;
                 }
             }
             &:last-child {
@@ -25,38 +24,38 @@
     }
 
     & .heroSectionContent {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 15px;
-        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 5vh;
 
         & .leftContent {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 24px;
+            gap: 5vh;
+            width: 70%;
             max-width: 400px;
 
             & h1 {
                 color: #2b2b2b;
-                font-size: 60px;
+                font-size: 3.75rem;
                 font-weight: 600;
-                letter-spacing: -1.8px;
+                letter-spacing: -0.113rem;
             }
     
             & p {
                 color: #7A7A7A;
-                font-size: 16px;
+                font-size: 1rem;
                 font-weight: 400;
                 line-height: 150%;
-                letter-spacing: -0.48px;
+                letter-spacing: -0.03rem;
             }
     
             & .buttons {
                 display: flex;
                 align-items: center;
-                gap: 12px;
+                gap: 3%;
     
             }
         }
@@ -65,21 +64,29 @@
             border-radius: 12px;
             background-color: #EAEFF4;     
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 5rem 0;
+
+            & > img {
+                width: 80%;
+            }
 
             & .textAbsolute {
                 position: absolute;
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
+                gap: 3vh;
                 color: #ffffff;
                 top: 50%;
-                left: -145px;
-                transform: translateY(-50%);
+                left: -30%;
+                transform: translate(30%, -50%);
                 z-index: 100;
 
                 & div {
                     border-radius: 12px;
-                    padding: 25px 50px 25px 16px;
+                    padding: 1.5rem;
                 
                     &:nth-child(1) {
                         background: #95ACD3;
@@ -88,33 +95,17 @@
                         background: #A6C198;
                     }
                 }
-        
-                & h2 {
-                    font-size: 60px;
-                    font-weight: 600;
-                    line-height: 120%;
-                    letter-spacing: -2.4px;
-                }
-                
-                & p {
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 32px;
-                    letter-spacing: -0.48px;
-                }
             }
 
             & .studentsAbsolute {
                 position: absolute;
                 top: 50%;
-                left: -210px;
+                left: -30%;
                 transform: translateY(-50%);
-                width: 215px;
-                height: 240px;
+                width: 50%;
+                height: 45%;
                 border-radius: 12px;
-                border-top: 1.5px solid #E6EEFB;
-                border-bottom: 1.5px solid #E6EEFB;
-                border-left: 1.5px solid #E6EEFB;
+                border: 0.094rem solid #E6EEFB;
                 z-index: 5;
                 
                 & .studentsContainer {
@@ -125,15 +116,78 @@
                     & > div {
                         display: flex;
                         flex-direction: column;
-                        gap: 10px;
+                        gap: 1.5vh;
                         position: absolute;
                         top: 50%;
-                        left: -26px;
+                        left: -6.5%;
                         transform: translateY(-50%);
+
+                        & img {
+                            max-width: 80%;
+                        }
                     }
                 }
             }
         }
     }
 
+}
+
+
+@media (max-width: 1200px) {
+    .leftContent {
+        & h1 {
+            font-size: 2.5rem !important;
+        }
+    }
+    .rightContent {
+        & .textAbsolute {
+            gap: 2vh !important;
+        }
+    }
+    .studentsContainer {
+        & .studentsContainer div {
+            left: 1.25rem;
+            img {
+                max-width: 2.5rem;
+            }
+        }
+    }
+}
+@media (max-width: 981px) {
+    .studentsContainer {
+        & .studentsContainer div {
+            left: 1.25rem;
+            img {
+                max-width: 2rem;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .leftContent {
+        & h1 {
+            font-size: 2rem !important;
+        }
+        & .buttons {
+            flex-direction: column;
+            gap: 3vh !important;
+        }
+    }
+    .rightContent {
+        max-height: 70% !important;
+        & .textAbsolute {
+            gap: 2vh !important;
+            & div {
+                padding: 0.75rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 481px) {
+    .leftContent {
+        & h1 {
+            font-size: 1.5rem !important;
+        }
+    }
 }

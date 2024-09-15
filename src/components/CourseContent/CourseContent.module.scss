@@ -9,9 +9,7 @@
 
         & h2 {
             color: #2b2b2b;
-            font-size: 38px;
-            font-weight: 600;
-            letter-spacing: -1.52px;
+            font-size: 2.25rem;
         }
 
         & > div {
@@ -65,6 +63,26 @@
                         opacity: 0;
                         overflow: hidden;
                         transition: all 0.3s ease-in-out;
+
+                        & li {
+                            border-radius: 12px;
+                            border: 1px solid  #E7E7E7;
+                            background: #FDFDFD;
+                            box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
+                            display: flex;
+                            gap: 20px;
+                            padding: 16px 20px;
+
+                            &:not(:first-child) {
+                                margin-top: 8px;
+                            }
+
+                            & span {
+                                border-radius: 12px;
+                                background: #E7F0FC;
+                                padding: 4px 9px;
+                            }
+                        }
                     }
 
                     & .open {

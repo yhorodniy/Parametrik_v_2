@@ -14,23 +14,17 @@
 
     & h2 {
         color: #2B2B2B;
-        font-family: Onest;
-        font-size: 38px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 110%; /* 41.8px */
-        letter-spacing: -1.52px;
         margin: 14px 0 32px 0;
     }
 
     & .testimonialsContent {
         display: grid;
-        grid-template-columns: 945px 1fr;
+        grid-template-columns: 5fr 1fr;
         gap: 24px;
         position: relative;
 
         & .comment {
-            padding: 40px 24px 100px;
+            padding: 5% 3% 10%;
             border-radius: 12px;
             border: 1px solid #F4F4F4;
             background: #FFF;
@@ -42,12 +36,9 @@
                 gap: 12px;
                 margin-bottom: 32px;
 
-                & h4 {
+                & h3 {
                     color: #010B1F;
-                    font-size: 20px;
-                    font-weight: 600;
-                    line-height: 32px;
-                    letter-spacing: -0.6px;
+                    margin: 0;
                 }
                 & span {
                     color: #959595;
@@ -62,10 +53,6 @@
 
                 & p {
                     color: #959595;
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 150%;
-                    letter-spacing: -0.54px;
                     margin-top: 18px;
                 }
             }
@@ -107,6 +94,7 @@
                 padding: 23px 0 23px 12px;
 
                 & h3 {
+                    color: #FFFfff;
                     font-size: 60px;
                     font-weight: 600;
                     line-height: 120%;
@@ -118,6 +106,41 @@
                     line-height: 32px;
                     letter-spacing: -0.48px;
                 }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .testimonials {
+        & .testimonialsContent {
+            & .comment {
+                & .sudent {
+                    & span {
+                        font-size: 12px;
+                    }
+                }
+            }
+            & .buttons {
+                left: 5%;
+                transform: scale(0.8);
+            }
+        }
+    }
+}
+@media (max-width: 481px) {
+    .testimonials {
+        & .testimonialsContent {
+            & .comment {
+                & .sudent {
+                    & span {
+                        font-size: 8px;
+                    }
+                }
+            }
+            & .buttons {
+                transform: scale(0.5);
             }
         }
     }

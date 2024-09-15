@@ -2,6 +2,7 @@ import React from 'react'
 import Annotation from '../helpers/Annotation/Annotation'
 
 import styles from './CourseExpectations.module.scss'
+import classNames from 'classnames'
 
 interface Expectations {
   img: string,
@@ -39,8 +40,8 @@ const CourseExpectations: React.FC = () => {
         <Annotation color="#5E759E">Переваги</Annotation>
         <h2>Що на тебе чекає?</h2>
         <div className={styles.expectationsList}>
-          <img src='/img/expectations-logo-1.png' alt='Expectations' />
-          <img src='/img/expectations-logo-2.png' alt='Expectations' />
+          <div className={classNames(styles.imgWrapper, styles.firstImg)} />
+          <div className={classNames(styles.imgWrapper, styles.secondImg)} />
           {expectations.map((element, index) => (
             <div key={index} className={styles.expectationsItem}>
               <img src={element.img} alt={element.title} width='48' height='48' />

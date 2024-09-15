@@ -37,7 +37,6 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding-left: 10px;
 
         & .worksListCarouselContainer {
             width: 100%;
@@ -49,7 +48,7 @@
                 transition: transform 0.5s ease-in-out;
         
                 & .workSlide {
-                    min-width: 390px;
+                    flex: 0 0 30%;
                     transition: transform 0.5s ease-in-out;
                     display: flex;
                     flex-direction: column;

@@ -19,7 +19,7 @@ const CourseSkils: React.FC = () => {
               <li key={index} style={{ backgroundColor: el.bg}}>
                 <div>
                   <CheckIcon />
-                  <span>{el.text}</span>
+                  <p>{el.text}</p>
                   <Cursor color={el.cursor} />
                 </div>
               </li>

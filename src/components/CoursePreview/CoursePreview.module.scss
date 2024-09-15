@@ -16,57 +16,129 @@
         & h2 {
             color: #2B2B2B;
             text-align: center;
-            font-size: 38px;
-            font-weight: 600;
-            line-height: 110%;
-            letter-spacing: -1.52px;
             margin: 14px 0 50px 0;
+        }
+
+        & img {
+            max-width: 60%;
         }
 
         & .textAbsolute {
             position: absolute;
-            padding: 27px 44px 27px 12px;
+            padding: 1.5% 5% 1.5% 1.5%;
             background-color: #95ACD3;
             border-radius: 12px;
             display: flex;
             flex-direction: column;
             color: #ffffff;
-            gap: 8px;
-    
-            & p {
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 32px;
-                letter-spacing: -0.48px;
-            }
+            gap: 2%;
     
             & h3 {
+                color: #ffffff;
                 font-size: 60px;
                 font-weight: 600;
                 line-height: 120%;
                 letter-spacing: -2.4px;
+                margin: 0;
             }
         }
     
         & .left {
-            bottom: 70px;
-            left: 60px;
+            bottom: 10%;
+            left: 5%;
             transform: rotate(-2deg);
         }
         & .right {
-            bottom: 225px;
-            right: 60px;
+            bottom: 30%;
+            right: 5%;
             transform: rotate(3deg);
         }
         & .leftArrow {
             position: absolute;
-            top: 270px;
-            left: 150px;
+            bottom: 45%;
+            left: 12%;
         }
         & .rightArrow {
             position: absolute;
-            bottom: 70px;
-            right: 150px;
+            bottom: 10%;
+            right: 12%;
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .coursePreview {
+        & .coursePreviewBg {
+            & .textAbsolute {
+                h3 {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .coursePreview {
+        & .coursePreviewBg {
+            & .textAbsolute {
+                h3 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .coursePreview {
+        & .coursePreviewBg {
+            & .textAbsolute {
+                h3 {
+                    font-size: 24px;
+                }
+            }
+            & .leftArrow {
+                position: absolute;
+                bottom: 35%;
+                left: 12%;
+                transform: scale(0.7);
+            }
+            & .rightArrow {
+                transform: scale(0.7);
+            }
+        }
+    }
+}
+@media (max-width: 481px) {
+    .coursePreview {
+        & .coursePreviewBg {
+            & .textAbsolute {
+                h3 {
+                    font-size: 18px;
+                }
+            }
+            & .left {
+                bottom: 6%;
+                left: 3%;
+                transform: rotate(-3deg) scale(0.8);
+            }
+            & .right {
+                bottom: 20%;
+                right: 3%;
+                transform: rotate(3deg) scale(0.8);
+            }
+            & .leftArrow {
+                position: absolute;
+                bottom: 25%;
+                left: 7%;
+                transform: scale(0.5);
+            }
+            & .rightArrow {
+                position: absolute;
+                bottom: 3%;
+                right: 8%;
+                transform: scale(0.5);
+            }
         }
     }
 }

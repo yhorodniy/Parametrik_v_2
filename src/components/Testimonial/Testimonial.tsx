@@ -50,7 +50,7 @@ const Testimonials: React.FC = () => {
                   alt={testimonialsList[currentComment].student.name}
                 />
                 <div className={styles.studentInfo}>
-                  <h4>{testimonialsList[currentComment].student.name}</h4>
+                  <h3>{testimonialsList[currentComment].student.name}</h3>
                   <span>{testimonialsList[currentComment].student.prof}</span>
                 </div>
               </div>

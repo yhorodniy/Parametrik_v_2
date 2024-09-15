@@ -13,10 +13,6 @@
 
         & h2 {
             color: #2B2B2B;
-            font-size: 34px;
-            font-weight: 600;
-            line-height: 110%;
-            letter-spacing: -1.36px;
             margin: 12px 0 32px;
         }
 
@@ -32,21 +28,18 @@
                 border: 1px solid #F4F4F4;
                 background: #FFF;
                 box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
-                padding: 24px;
+                padding: 5%;
                 display: flex;
                 gap: 24px;
 
                 & img {
-                    width: 150px;
+                    max-width: 30%;
                     border-radius: 12px;
                 }
 
                 & h3 {
                     color: #010B1F;
-                    font-size: 20px;
-                    font-weight: 600;
-                    line-height: 32px;
-                    letter-spacing: -0.6px;
+                    margin: 0;
                 }
                 & span {
                     display: block;
@@ -61,9 +54,6 @@
                 & p {
                     color: #8CAF79;
                     font-size: 20px;
-                    font-weight: 600;
-                    line-height: 120%;
-                    letter-spacing: -0.8px;
                 }
 
                 & button {
@@ -83,31 +73,76 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 80px 40px;
+                padding: 15% 7%;
 
                 & h2 {
                     color: #FFF;
-                    font-size: 34px;
-                    font-weight: 600;
-                    line-height: 110%;
-                    letter-spacing: -1.36px;
                     margin: 0 0 16px;
                 }
 
                 & p {
                     color: #F9F9F9;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 150%;
-                    letter-spacing: -0.48px;
                     margin-bottom: 32px;
                 }
             }
 
             & img {
                 width: 100%;
+                height: 100%;
                 border-radius: 0 12px 12px 0;
             }
         }
     }
+}
+
+
+@media (max-width: 768px) {
+    .relatedCourses {
+        & .relatedCoursesContainer {
+            & .relatedCoursesList {
+                & li {
+                    & h3 {
+                        line-height: 130%;
+                    }
+                    & span {
+                        font-size: 12px;
+                    }
+                    & p {
+                        font-size: 16px;
+                    }
+                }
+            }
+            & .helpDesk {
+                grid-template-columns: 1fr 2fr;
+            }           
+        }       
+    }   
+}
+@media (max-width: 481px) {
+    .relatedCourses {
+        & .relatedCoursesContainer {
+            & .relatedCoursesList {
+                & li {
+                    & p {
+                        font-size: 14px;
+                    }
+                }
+            }
+            & .helpDesk {
+                display: flex;
+                flex-direction: column;
+                & .helpDeskText {
+                    & h2, & p {
+                        text-align: center;
+                    }
+                    & button {
+                        margin: 0 auto;
+                    }
+                }
+                & img {
+                    border-radius: 0 0 12px 12px;
+                }
+            }           
+        }       
+    }   
 }

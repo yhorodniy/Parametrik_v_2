@@ -16,7 +16,7 @@ const PricingPlans: React.FC = () => {
           <ul className={styles.pricingPlansList}>
             {pricingPlansList.map((el, index1) => (
               <li key={index1} className={styles.pricingPlansListItem}>
-                <h5>{el.title}</h5>
+                <h3>{el.title}</h3>
                 <p>{el.price}</p>
                 <ul>
                   {el.services.map((elem, index2) => (
