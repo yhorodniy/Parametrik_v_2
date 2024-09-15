@@ -1,0 +1,19 @@
+.top {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    transform: rotateX(180deg);
+}
+
+.bott {
+    position: absolute;
+    bottom: -60px;
+    left: 70px;
+}
+
+.right {
+    transform: rotateX(180deg) rotateZ(70deg)
+}
+.left {
+    transform: rotateZ(-110deg)
+}

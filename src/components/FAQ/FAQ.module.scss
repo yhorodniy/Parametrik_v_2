@@ -1,0 +1,97 @@
+.faq {
+    margin-top: 165px;
+
+    & h2 {
+        color: #2B2B2B;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -1.36px;
+        margin: 12px 0 32px 0;
+    }
+
+    & .faqSections {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+
+        & .leftSection {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            & .faqListItem {
+                padding: 20px;
+                border-radius: 12px;
+                background: #FFF;
+                box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                transition: all .3s;
+    
+                & .questionElement {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+    
+                    & h4 {
+                        color: #010B1F;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 130%;
+                        letter-spacing: -0.54px;
+                    }
+
+                    & svg {
+                        transform: rotateZ(-90deg);
+                        transition: transform .3s;
+                    }
+                }
+    
+                & .text {
+                    max-width: 600px;
+                    max-height: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    
+                    & p {
+                        color: #7A7A7A;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; /* 24px */
+                        letter-spacing: -0.48px;
+                    }
+                }
+
+                &.active {
+                    background: #95ACD3;
+
+                    & h4 {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        & .rightSection {
+
+            & .text {
+                display: flex;
+                align-items: center;
+                min-height: 40%;
+                padding: 24px;
+                border-radius: 12px;
+                background: #FDFDFD;
+                box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
+                color: #7A7A7A;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.48px;
+            }
+        }
+    }
+}

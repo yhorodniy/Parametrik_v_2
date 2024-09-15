@@ -1,0 +1,135 @@
+.pricingPlans {
+    margin-top: 140px;
+    
+    & > div {
+        position: relative;
+    }
+
+    & .pricingPlansBg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 385px;
+        background-color: #95ACD3;
+        border-radius: 12px;
+    }
+
+    & .pricingPlansContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 60px;
+
+        & h2 {
+            color: #FFF;
+            font-family: Onest;
+            font-size: 38px;
+            font-weight: 600;
+            line-height: 110%;
+            letter-spacing: -1.52px;
+            margin: 14px 0 100px 0;
+        }
+
+        & .pricingPlansList {
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 34px;
+
+            & .pricingPlansListItem {
+                background-color: #ffffff;
+                border: 1px solid #E7F0FC;
+                border-radius: 16px;
+                padding: 24px 20px;
+                min-height: 633px;
+                height: max-content;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+
+                & svg {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                & h5 {
+                    color: #010B1F;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: -0.54px;
+                }
+
+                & p {
+                    color: #3B74C1;
+                    text-align: center;
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 60px;
+                    letter-spacing: -1.08px;
+                    margin: 4px 0 48px 0;
+                }
+
+                & > ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+                    margin-bottom: 24px;
+                    & li {
+                        display: grid;
+                        grid-template-columns: 24px 1fr;
+                        gap: 12px;
+
+                        & span {
+                            color: #010B1F;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 150%;
+                            letter-spacing: -0.32px;
+                        }
+                    } 
+                }
+
+                & .btn {
+                    width: 100%;
+                    border-top: 1px solid #E7F0FC;
+                    padding: 24px 0 0 0;
+                    margin-top: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & button {
+                        border: 1px solid #DEDEDE;
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    scale: 1.06;
+                    background-color: #ADCF9C;
+
+                    & h5 {
+                        color: #FFF;
+                    }
+
+                    & p {
+                        color: #ffffff;
+                        border-radius: 6px;
+                        border: 1px solid rgba(231, 231, 231, 0.10);
+                        background: rgba(255, 255, 255, 0.20);
+                        box-shadow: 0px 1px 2px 0px rgba(16, 30, 40, 0.05);
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: -0.48px;
+                    }
+                }
+            }
+        }
+    }
+}

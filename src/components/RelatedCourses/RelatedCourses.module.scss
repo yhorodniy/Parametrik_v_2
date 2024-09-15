@@ -1,0 +1,113 @@
+.relatedCourses {
+    margin-top: 140px;
+    margin-bottom: 100px;
+
+    & .relatedCoursesContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 12px;
+        background: #FFF;
+        box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
+        padding: 60px 32px;
+
+        & h2 {
+            color: #2B2B2B;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 110%;
+            letter-spacing: -1.36px;
+            margin: 12px 0 32px;
+        }
+
+        & .relatedCoursesList {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            margin-bottom: 32px;
+
+            & li {
+                border-radius: 12px;
+                border: 1px solid #F4F4F4;
+                background: #FFF;
+                box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
+                padding: 24px;
+                display: flex;
+                gap: 24px;
+
+                & img {
+                    width: 150px;
+                    border-radius: 12px;
+                }
+
+                & h3 {
+                    color: #010B1F;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 32px;
+                    letter-spacing: -0.6px;
+                }
+                & span {
+                    display: block;
+                    color: #818181;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-top: 4px;
+                    margin-bottom: 20px;
+                }
+
+                & p {
+                    color: #8CAF79;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    letter-spacing: -0.8px;
+                }
+
+                & button {
+                    align-self: flex-end;
+                    margin-left: auto;
+                }
+            }
+        }
+
+        & .helpDesk {
+            border-radius: 12px;
+            background: #95ACD3;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            & .helpDeskText {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 80px 40px;
+
+                & h2 {
+                    color: #FFF;
+                    font-size: 34px;
+                    font-weight: 600;
+                    line-height: 110%;
+                    letter-spacing: -1.36px;
+                    margin: 0 0 16px;
+                }
+
+                & p {
+                    color: #F9F9F9;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.48px;
+                    margin-bottom: 32px;
+                }
+            }
+
+            & img {
+                width: 100%;
+                border-radius: 0 12px 12px 0;
+            }
+        }
+    }
+}

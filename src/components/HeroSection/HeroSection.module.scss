@@ -1,0 +1,139 @@
+.heroSection {
+    padding-top: 20px;
+    height: 750px;
+    background-color: #ffffff;
+
+    & .navigationList {
+        padding-top: 18px;
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            font-size: 14px;
+            font-weight: 400;
+
+            &:not(:last-child) {
+                color: #C6C8CF;
+                &::after {
+                    content: '>';
+                    margin-left: 10px;
+                }
+            }
+            &:last-child {
+                color: #000000;
+            }
+        }
+    }
+
+    & .heroSectionContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 45px;
+
+        & .leftContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+            max-width: 400px;
+
+            & h1 {
+                color: #2b2b2b;
+                font-size: 60px;
+                font-weight: 600;
+                letter-spacing: -1.8px;
+            }
+    
+            & p {
+                color: #7A7A7A;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.48px;
+            }
+    
+            & .buttons {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+    
+            }
+        }
+        
+        & .rightContent {
+            border-radius: 12px;
+            background-color: #EAEFF4;     
+            position: relative;
+
+            & .textAbsolute {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                color: #ffffff;
+                top: 50%;
+                left: -145px;
+                transform: translateY(-50%);
+                z-index: 100;
+
+                & div {
+                    border-radius: 12px;
+                    padding: 25px 50px 25px 16px;
+                
+                    &:nth-child(1) {
+                        background: #95ACD3;
+                    }
+                    &:nth-child(2) {
+                        background: #A6C198;
+                    }
+                }
+        
+                & h2 {
+                    font-size: 60px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    letter-spacing: -2.4px;
+                }
+                
+                & p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    letter-spacing: -0.48px;
+                }
+            }
+
+            & .studentsAbsolute {
+                position: absolute;
+                top: 50%;
+                left: -210px;
+                transform: translateY(-50%);
+                width: 215px;
+                height: 240px;
+                border-radius: 12px;
+                border-top: 1.5px solid #E6EEFB;
+                border-bottom: 1.5px solid #E6EEFB;
+                border-left: 1.5px solid #E6EEFB;
+                z-index: 5;
+                
+                & .studentsContainer {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    
+                    & > div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        position: absolute;
+                        top: 50%;
+                        left: -26px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+}

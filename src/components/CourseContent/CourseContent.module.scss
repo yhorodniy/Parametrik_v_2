@@ -1,0 +1,84 @@
+.courseContent {
+    margin-top: 80px;
+
+    & .titleContainer {
+        margin: 14px 0 32px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & h2 {
+            color: #2b2b2b;
+            font-size: 38px;
+            font-weight: 600;
+            letter-spacing: -1.52px;
+        }
+
+        & > div {
+            display: flex;
+            gap: 8px;
+
+            & span {
+                color: #050E60;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 120%;
+                letter-spacing: -0.48px;
+                padding: 6px 12px;
+                border-radius: 32px;
+                background: #FFF;
+            }
+        }
+    }
+
+    & .courseInfo {
+
+        & .courseInfoModules {
+            
+            & > ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+
+                & .moduleItem {
+                    width: 100%;
+                    border-radius: 12px;
+                    background: #FFF;
+                    box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    & .title {
+                        cursor: pointer;
+                        padding: 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    
+                    & .lessonsList {
+                        padding: 0 24px;
+                        max-height: 0;
+                        opacity: 0;
+                        overflow: hidden;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    & .open {
+                        max-height: 1000px;
+                        opacity: 1;
+                        margin-top: 20px;
+                        padding-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    & button {
+        margin-top: 24px;
+    }
+}

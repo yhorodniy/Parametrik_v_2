@@ -1,0 +1,96 @@
+.courseContent {
+    margin-top: 80px;
+
+    & .courseContentBg {
+        background-color: #ffffff;
+        position: relative;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+
+        & h2 {
+            color: #2b2b2b;
+            text-align: center;
+            font-size: 38px;
+            font-weight: 600;
+            line-height: 110%;
+            letter-spacing: -1.52px;
+        }
+
+        & .contentListAbsolute {
+            
+            & li {
+                color: #2C2C2C;
+                border: 1px solid rgba(231, 231, 231, 0.20);
+                width: max-content;
+                position: absolute;
+                
+                & div {
+                    padding: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+                    position: relative;
+
+                    & span {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 32px;
+                        letter-spacing: -0.48px;
+                    }
+                }
+                
+                &:nth-child(odd) {
+                    border-radius: 12px 12px 12px 0px;
+                    transform: rotate(1deg);
+                    & div svg:last-child {
+                        position: absolute;
+                        bottom: -18px;
+                        left: -18px;
+                    }
+                }
+                
+                &:nth-child(even) {
+                    transform: rotate(-1deg);
+                    border-radius: 12px 12px 0px 12px;
+                    & div svg:last-child {
+                        position: absolute;
+                        bottom: -18px;
+                        right: -18px;
+                        transform: rotateY(180deg);
+                    }
+                }
+
+                &:nth-child(1) {
+                    top: 50px;
+                    left: 125px;
+                }
+                &:nth-child(2) {
+                    top: 200px;
+                    left: 55px;
+                }
+                &:nth-child(3) {
+                    top: 350px;
+                    left: 125px;
+                }
+                &:nth-child(4) {
+                    top: 50px;
+                    right: 110px;
+                }
+                &:nth-child(5) {
+                    top: 225px;
+                    right: 55px;
+                }
+                &:nth-child(6) {
+                    top: 360px;
+                    right: 85px;
+                }
+            }
+        }
+    }
+}
