@@ -26,7 +26,7 @@
 
         & .studentWork {
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns: 2fr 1fr;
             gap: 20px;
 
             & .imgContainer {
@@ -36,9 +36,10 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
+                border-radius: 12px;
     
                 & img {
-                    width: 85%;
+                    max-width: 80%;
                 }
             }
 
@@ -55,24 +56,28 @@
 }
 
 
-@media (max-width: 991px) {
-    .projectShowcase {
-        & .projectShowcaseBg {
-            & .studentWork {
-                grid-template-columns: 2fr 1fr;
-            }
-        }
-    }
-}
 @media (max-width: 768px) {
     .projectShowcase {
         & .projectShowcaseBg {
             & .studentWork {
-                grid-template-columns: 1fr;
-                & .imgContainer img {
-                    max-height: 75%;
-                    max-width: 100%;
-                    width: auto;
+                align-items: center;
+                justify-content: center;
+                & .imgContainer {
+                    height: 60%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 481px) {
+    .projectShowcase {
+        & .projectShowcaseBg {
+            & .studentWork {
+                & .imgContainer {
+                    align-items: center;
+                    & img {
+                        border-radius: 5px;
+                    }
                 }
             }
         }

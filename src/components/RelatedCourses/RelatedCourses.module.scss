@@ -48,7 +48,7 @@
                     font-weight: 500;
                     line-height: 20px;
                     margin-top: 4px;
-                    margin-bottom: 20px;
+                    margin-bottom: 10%;
                 }
 
                 & p {
@@ -82,7 +82,7 @@
 
                 & p {
                     color: #F9F9F9;
-                    margin-bottom: 32px;
+                    margin-bottom: 10%;
                 }
             }
 
@@ -111,10 +111,7 @@
                         font-size: 16px;
                     }
                 }
-            }
-            & .helpDesk {
-                grid-template-columns: 1fr 2fr;
-            }           
+            }        
         }       
     }   
 }
@@ -129,8 +126,6 @@
                 }
             }
             & .helpDesk {
-                display: flex;
-                flex-direction: column;
                 & .helpDeskText {
                     & h2, & p {
                         text-align: center;
