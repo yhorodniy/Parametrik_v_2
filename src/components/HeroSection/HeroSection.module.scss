@@ -33,6 +33,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             gap: 5vh;
             width: 70%;
             max-width: 400px;
@@ -67,7 +68,8 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            padding: 5rem 0;
+            padding: 15% 0;
+            height: max-content;
 
             & > img {
                 width: 80%;
@@ -116,14 +118,14 @@
                     & > div {
                         display: flex;
                         flex-direction: column;
-                        gap: 1.5vh;
+                        gap: 1.5rem;
                         position: absolute;
                         top: 50%;
-                        left: -6.5%;
+                        left: -7%;
                         transform: translateY(-50%);
 
                         & img {
-                            max-width: 80%;
+                            max-width: 90%;
                         }
                     }
                 }
@@ -135,51 +137,77 @@
 
 
 @media (max-width: 1200px) {
-    .leftContent {
-        & h1 {
-            font-size: 2.5rem !important;
-        }
-    }
-    .rightContent {
-        & .textAbsolute {
-            gap: 2vh !important;
-        }
-    }
-    .studentsContainer {
-        & .studentsContainer div {
-            left: 1.25rem;
-            img {
-                max-width: 2.5rem;
+    .heroSection {
+        & .heroSectionContent {
+            .leftContent {
+                & h1 {
+                    font-size: 2.5rem;
+                }
             }
+            .rightContent {
+                & .textAbsolute {
+                    gap: 2vh !important;
+                }
+                & .studentsAbsolute {
+                    & .studentsContainer > div {
+                        left: -8%;
+                        gap: 1rem;
+                        img {
+                            max-width: 70%;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
 @media (max-width: 981px) {
-    .studentsContainer {
-        & .studentsContainer div {
-            left: 1.25rem;
-            img {
-                max-width: 2rem;
+    .heroSection {
+        & .heroSectionContent {
+            & .rightContent {
+                & .studentsAbsolute {
+                    & .studentsContainer > div {
+                        left: -8%;
+                        gap: 0.5rem;
+                        img {
+                            max-width: 60%;
+                        }
+                    }
+                }
             }
         }
     }
 }
 @media (max-width: 768px) {
-    .leftContent {
-        & h1 {
-            font-size: 2rem !important;
-        }
-        & .buttons {
-            flex-direction: column;
-            gap: 3vh !important;
-        }
-    }
-    .rightContent {
-        max-height: 70% !important;
-        & .textAbsolute {
-            gap: 2vh !important;
-            & div {
-                padding: 0.75rem !important;
+    .heroSection {
+        & .heroSectionContent {
+            .leftContent {
+                & h1 {
+                    font-size: 2rem;
+                }
+                & .buttons {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+            }
+            & .rightContent {
+                max-height: 70% !important;
+                & .textAbsolute {
+                    gap: 2vh !important;
+                    & div {
+                        padding: 0.75rem !important;
+                    }
+                }
+                & .studentsAbsolute {
+                    & .studentsContainer > div {
+                        left: -10%;
+                        gap: 0.3rem;
+                        img {
+                            max-width: 40%;
+                        }
+                    }
+                }
             }
         }
     }
