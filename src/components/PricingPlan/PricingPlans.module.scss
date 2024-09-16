@@ -38,8 +38,7 @@
                 background-color: #ffffff;
                 border: 1px solid #E7F0FC;
                 border-radius: 16px;
-                padding: 24px 20px;
-                min-height: 633px;
+                padding: 10%;
                 height: max-content;
                 display: flex;
                 align-items: center;
@@ -142,6 +141,12 @@
                             }
                         }
                     }
+                    &:nth-child(2) {
+                        & p {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
                 }
             }           
         }       
@@ -164,6 +169,22 @@
                             & span {
                                 font-size: 8px;
                             }
+                        }
+                    }
+                }
+            }           
+        }       
+    }
+}
+@media (max-width: 991px) {
+    .pricingPlans {
+        & .pricingPlansContent {
+            & .pricingPlansList {
+                & .pricingPlansListItem {
+                    &:nth-child(2) {
+                        & p {
+                            font-size: 8px;
+                            line-height: 12px;
                         }
                     }
                 }
