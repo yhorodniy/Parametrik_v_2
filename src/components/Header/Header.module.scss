@@ -7,7 +7,7 @@
 }
 
 .headerLogo img {
-    max-width: 10vw;
+    max-width: 70%;
 }
 
 .headerContainer {
@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 2vw;
-    padding: 2vh 2vh;
+    padding: 2vh 2vw;
 }
 
 .navigationMenu {
@@ -60,7 +60,7 @@
     & .signUp {
         background-color: #385DFF;
         color: #ffffff;
-        padding: 2vh 1.5vw;
+        padding: 10%;
         border-radius: 20px;
     }
 }
@@ -75,8 +75,7 @@
     border-radius: 4px;
     padding: 1.25rem;
     z-index: 100;
-    
-    
+
     &::before {
         content: '';
         border-left: 0.625rem solid transparent;
@@ -98,17 +97,19 @@
     position: absolute;
     width: 200px;
     top: 0;
-    left: -220px;
+    left:-220px;
     background-color: #ffffff;
     box-shadow: 0 2px 7px 1px rgba(0, 0, 0, .05), 0 6px 32px 0 rgba(18, 43, 70, .1);
     border-radius: 4px;
     padding: 1.25rem;
 }
 
-
 @media (max-width: 768px) {
     .header {
         font-size: 0.5rem;
+        & svg {
+            width: 0.5rem;
+        }
     }
 
     .servisesSubmenu, .contactsSubmenu, .servisesSubmenuCourses {
@@ -121,12 +122,12 @@
     .servisesSubmenuCourses {
         left: -21.5vw;
     }
-    .signUp {
-        padding: 1vh 0.75vw;
-    }
 }
-@media (max-width: 481) {
+@media (max-width: 481px) {
     .header {
         font-size: 0.4rem;
+        & svg {
+            width: 0.4rem;
+        }
     }
 }

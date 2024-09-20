@@ -8,12 +8,15 @@ import SearchIcon from "./Icons/Search";
 import DropdownArrow from "./Icons/DropdownArrow";
 
 import styles from "./Header.module.scss";
+import useBreakpoint from "../../customHooks/UseBreakpoint";
 
 
 const Header: React.FC = () => {
   const [ isServises, setIsServises] = useState(false)
   const [ isCourses, setIsCourses ] = useState(false)
   const [ isContact, setIsContact ] = useState(false)
+
+  const breakpoint = useBreakpoint()
 
   const contactsInfo = [
     {
@@ -151,7 +154,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <div onClick={toggleContactSubmenu} style={{display:"flex", alignItems:'center', gap:'3px'}}>
-                {contactsInfo[0].icon}
+                {breakpoint === 'tablet' && contactsInfo[0].icon}
                 <span style={{marginLeft: '10px'}}>{contactsInfo[0].text}</span>
                 <DropdownArrow />
               </div>

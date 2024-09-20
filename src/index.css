@@ -56,13 +56,14 @@ button {
 }
 
 .btn {
-    padding: 5%;
+    padding: 0.75rem;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 500;
     line-height: 120%;
     letter-spacing: -0.02rem;
     width: max-content;
+    height: max-content;
 }
 
 .main-btn {
@@ -89,6 +90,21 @@ button {
         font-size: 0.75rem;
     }
 }
+@media (max-width: 981px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.6rem;
+    }
+    .btn {
+        font-size: 0.7rem;
+        padding: 0.6rem;
+    }
+}
 @media (max-width: 768px) {
     h2 {
         font-size: 1.75rem;
@@ -100,7 +116,8 @@ button {
         font-size: 0.6rem;
     }
     .btn {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
+        padding: 0.4rem;
     }
 }
 @media (max-width: 481px) {
@@ -112,5 +129,9 @@ button {
     }
     p {
         font-size: 0.5rem;
+    }
+    .btn {
+        font-size: 0.5rem;
+        padding: 0.3rem;
     }
 }
