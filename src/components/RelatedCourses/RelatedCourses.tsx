@@ -4,6 +4,12 @@ import Annotation from "../helpers/Annotation/Annotation";
 import { relatedCoursesList } from "./relatedCoursesList";
 
 const RelatedCourses: React.FC = () => {
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleOnClick: any = (url: string) => {
+    const location = window.location
+    location.assign(url)
+  }
   
   return (
     <section className={styles.relatedCourses}>
@@ -13,14 +19,16 @@ const RelatedCourses: React.FC = () => {
           <h2>Курси, які вас можуть зацікавити</h2>
           <ul className={styles.relatedCoursesList}>
             {relatedCoursesList.map(el => (
-              <li>
-                <img src={el.img} alt={el.title} />
+              <li key={el.id}>
+                <a href={el.url}>
+                  <img src={el.img} alt={el.title} />
+                </a>
                 <div className={styles.courseInfo}>
                   <h3>{el.title}</h3>
                   <span>{el.lessons}</span>
                   <p>{el.price}</p>
                 </div>
-                <button className="btn main-btn">Деталі курсу</button>
+                <button className="btn main-btn" onClick={() => handleOnClick(el.url)}>Деталі курсу</button>
               </li>
             ))}
           </ul>

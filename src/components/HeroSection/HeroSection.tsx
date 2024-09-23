@@ -3,9 +3,18 @@ import styles from "./HeroSection.module.scss";
 
 const HeroSection: React.FC = () => {
   const navigation = [
-    'Головна',
-    'Курси',
-    'Revit Interior Design'
+    {
+      title: 'Головна',
+      url: '/'
+    },
+    {
+      title: 'Курси',
+      url: '/courses'
+    },
+    {
+      title: 'Revit Interior Design',
+      url: '/#'
+    }
   ]
 
   return (
@@ -15,7 +24,7 @@ const HeroSection: React.FC = () => {
           <div>
             <ul className={styles.navigationList}>
               {navigation.map((el, index) => (
-                <li key={index}>{el}</li>
+                <li key={index}><a href={el.url}>{el.title}</a></li>
               ))}
             </ul>
           </div>

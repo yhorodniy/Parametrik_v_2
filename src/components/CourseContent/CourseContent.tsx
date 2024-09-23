@@ -5,6 +5,7 @@ import styles from "./CourseContent.module.scss";
 import DownArrow from "../helpers/DownArrow/DownArrow";
 import classNames from "classnames";
 import { modulesList } from "./modulesList";
+import CheckIcon from "../helpers/CheckIcon/CheckIcon";
 
 const CourseContent: React.FC = () => {
   const [currentModule, setCurrentModule] = useState(0);
@@ -62,6 +63,12 @@ const CourseContent: React.FC = () => {
                           <span>{index + 1}</span>
                           <p>{el}</p>
                         </li>
+                      ))}
+                      {el.result.length > 0 && el.result.map((element, index1) => (
+                        <p key={index1}>
+                          <CheckIcon />
+                          <strong>{element}</strong>
+                        </p>
                       ))}
                     </ul>
                   }

@@ -4,18 +4,18 @@
     & .courseContentBg {
         background-color: #ffffff;
         position: relative;
+        height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 20px;
         border-radius: 10px;
-        padding: 6rem 0;
 
         & h2 {
             color: #2B2B2B;
             text-align: center;
-            font-size: 2.125rem;
+            font-size: 2.25rem;
         }
 
         & svg, h2, h6, button {
@@ -31,11 +31,11 @@
                 position: absolute;
                 
                 & div {
-                    padding: 1.125rem;
+                    padding: 18px;
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
-                    gap: 0.5rem;
+                    gap: 10px;
                     position: relative;
                 }
                 
@@ -44,8 +44,8 @@
                     transform: rotate(1deg);
                     & div svg:last-child {
                         position: absolute;
-                        bottom: -1.1rem;
-                        left: -1.1rem;
+                        bottom: -18px;
+                        left: -18px;
                     }
                 }
                 
@@ -54,35 +54,35 @@
                     border-radius: 12px 12px 0px 12px;
                     & div svg:last-child {
                         position: absolute;
-                        bottom: -1.1rem;
-                        right: -1.1rem;
+                        bottom: -18px;
+                        right: -18px;
                         transform: rotateY(180deg);
                     }
                 }
 
                 &:nth-child(1) {
-                    top: 3.125rem;
-                    left: 7.813rem;
+                    top: 10%;
+                    left: 10%;
                 }
                 &:nth-child(2) {
-                    top: 12.5rem;
-                    left: 3.438rem;
+                    top: 45%;
+                    left: 5%;
                 }
                 &:nth-child(3) {
-                    top: 21.875rem;
-                    left: 7.813rem;
+                    bottom: 10%;
+                    left: 8%;
                 }
                 &:nth-child(4) {
-                    top: 3.125rem;
-                    right: 6.875rem;
+                    top: 10%;
+                    right: 10%;
                 }
                 &:nth-child(5) {
-                    top: 14.063rem;
-                    right: 3.438rem;
+                    top: 45%;
+                    right: 5%;
                 }
                 &:nth-child(6) {
-                    top: 22.5rem;
-                    right: 5.313rem;
+                    bottom: 10%;
+                    right: 8%;
                 }
             }
         }
@@ -90,42 +90,53 @@
 }
 
 
-@media (max-width: 981px) {
-    .courseContent .courseContentBg {
-        & h2 {
-            font-size: 1.75rem;
-        }
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .courseContent .courseContentBg {
         & h2 {
             font-size: 1.5rem;
         }
+    }
+}
+@media (max-width: 768px) {
+    .courseContent .courseContentBg {
+        & h2 {
+            font-size: 1.25rem;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .courseContent .courseContentBg {
+        justify-content: flex-start;
+        padding-top: 15%;
+        & h2 {
+            font-size: 1.3rem;
+            letter-spacing: normal;
+        }
         & .contentListAbsolute li {
-            max-width: 30%;
-        
+            max-width: 40%;  
             &:nth-child(1) {
-                left: 4rem;
+                top: 5%;
+                left: 5%;
             }
             &:nth-child(2) {
-                left: 1.5rem;
+                top: 40%;
+                left: 2%;
             }
             &:nth-child(3) {
-                left: 4.5rem;
-                top: 19.5rem;
+                bottom: 20%;
+                left: 5%;
             }
             &:nth-child(4) {
-                right: 3rem;
+                top: 7%;
+                right: 5%;
             }
             &:nth-child(5) {
-                right: 0.5rem;
-                top: 11.5rem;
+                top: 43%;
+                right: 2%;
             }
             &:nth-child(6) {
-                right: 2.5rem;
-                top: 20.1rem;
+                bottom: 15%;
+                right: 3%;
             }
         }
     }
@@ -133,8 +144,9 @@
 
 @media (max-width: 481px) {
     .courseContent .courseContentBg {
+        padding-top: 25%;
         & h2 {
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
     }
 }

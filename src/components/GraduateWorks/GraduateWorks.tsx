@@ -27,25 +27,25 @@ const GraduateWorks: React.FC = () => {
     const carouselWrapper = worksListRef.current;
     if (carouselWrapper) {
       const slideWidth = carouselWrapper.firstElementChild?.clientWidth || 0;
-      const offset = -slideWidth * currentSlide + (carouselWrapper.clientWidth - slideWidth * 3) / 2;
+      const offset = -slideWidth * currentSlide + (carouselWrapper.clientWidth - slideWidth * 2) / 2;
       carouselWrapper.style.transform = `translateX(${offset}px)`;
     }
   }, [currentSlide])
 
   const nextSlides = () => {
-    setCurrentSlide((prev: number) => (prev + 3) % totalSlides);
+    setCurrentSlide((prev: number) => (prev + 2) % totalSlides);
   };
 
   const prevSlides = () => {
-    setCurrentSlide((prev: number) => (prev - 3 + totalSlides) % totalSlides);
+    setCurrentSlide((prev: number) => (prev - 2 + totalSlides) % totalSlides);
   };
 
   useEffect(() => {
     updateSlides();
   }, [updateSlides, currentSlide]);
 
-  const totalPage = Math.ceil(totalSlides / 3)
-  const curretPage = Math.floor(currentSlide / 3) + 1
+  const totalPage = Math.ceil(totalSlides / 2)
+  const curretPage = Math.floor(currentSlide / 2) + 1
 
   return (
     <section className={styles.graduateWorksSection}>

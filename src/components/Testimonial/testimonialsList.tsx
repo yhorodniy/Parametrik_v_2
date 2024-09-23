@@ -13,7 +13,7 @@ interface Testimonial {
 export const testimonialsList: Testimonial[] = [
     {
         student: {
-            avatar: '/img/student-1.png',
+            avatar: '/img/comment-1.png',
             name: 'Ganna Semenova',
             prof: 'Архітектор'
         },
@@ -21,7 +21,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-2.png',
+            avatar: '/img/comment-2.png',
             name: 'Богдан Щуляр',
             prof: 'Архітектор'
         },
@@ -29,7 +29,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-1.png',
+            avatar: '/img/comment-1.png',
             name: 'Ganna Semenova',
             prof: 'Архітектор'
         },
@@ -37,7 +37,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-2.png',
+            avatar: '/img/comment-2.png',
             name: 'Богдан Щуляр',
             prof: 'Архітектор'
         },
@@ -45,7 +45,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-1.png',
+            avatar: '/img/comment-1.png',
             name: 'Ganna Semenova',
             prof: 'Архітектор'
         },
@@ -53,7 +53,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-2.png',
+            avatar: '/img/comment-2.png',
             name: 'Богдан Щуляр',
             prof: 'Архітектор'
         },
@@ -61,7 +61,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-1.png',
+            avatar: '/img/comment-1.png',
             name: 'Ganna Semenova',
             prof: 'Архітектор'
         },
@@ -69,7 +69,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-2.png',
+            avatar: '/img/comment-2.png',
             name: 'Богдан Щуляр',
             prof: 'Архітектор'
         },
@@ -77,7 +77,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-1.png',
+            avatar: '/img/comment-1.png',
             name: 'Ganna Semenova',
             prof: 'Архітектор'
         },
@@ -85,7 +85,7 @@ export const testimonialsList: Testimonial[] = [
     },
     {
         student: {
-            avatar: '/img/student-2.png',
+            avatar: '/img/comment-2.png',
             name: 'Богдан Щуляр',
             prof: 'Архітектор'
         },

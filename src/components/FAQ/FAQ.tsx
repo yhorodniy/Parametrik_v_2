@@ -19,7 +19,7 @@ const FAQ: React.FC = () => {
   return (
     <section className={styles.faq}>
       <div className="container">
-        <Annotation color="#5E759E">FAQ</Annotation>
+        <Annotation color="#5E759E">Q&A</Annotation>
         <h2>Часті запитання про курс Revit</h2>
         <div className={styles.faqSections}>
           <div className={styles.leftSection}>

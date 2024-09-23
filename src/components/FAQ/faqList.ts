@@ -4,31 +4,32 @@ export const faqList = [
     {
         id: 1,
         title: 'Чи потрібен мені досвід роботи з Revit для цього курсу?',
-        text: 'Lorem ipsum dolor sit amet consectetur. Dui semper tempus fringilla velit. Integer bibendum ornare libero mauris. Cursus purus quam et ipsum diam. Non in scelerisque in est quam viverra interdum arcu morbi. Amet ac aenean quam malesuada libero amet et. Cursus ut pharetra enim lorem montes faucibus nibh viverra euismod. A faucibus purus vehicula in leo at risus. Convallis ipsum sed tristique leo quisque aliquam. '
+        text: "Досвід роботи в Revit не обов’язково потрібен для курсу. Ми навчимо вас всьому поступово та структуровано. У курсі ви ознайомитеся з усіма необхідними інструментами, починаючи з інтерфейсу та різних етапів проектування до складних специфікацій. Також ми надамо всі необхідні матеріали, шаблони та сімейства для проектування. Курс підійде як для новачків без досвіду, так і для тих, хто хоче поглибити свої навички в сфері інтер'єрного дизайну з використанням Revit."
     },
     {
+
         id: 2,
         title: 'Скільки триває курс і як організовані заняття?',
-        text: 'Corrupti maiores placeat ea explicabo id accusamus quas dignissimos! Maxime quam laborum, accusamus in non quod odit est recusandae, eaque omnis aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit.  id accusamus quas dignissimos! Maxime quam laborum, accusamus in non quod odit est recusandae, eaque omnis aliquid!Lorem ipsum dolor sit amet consectetur. Dui semper tempus fringilla velit. Integer bibendum ornare libero mauris. Cursus purus quam et ipsum diam. Non in scelerisque in est quam viverra interdum arcu morbi. Amet ac aenean quam malesuada libero amet et. Cursus ut pharetra enim lorem montes faucibus nibh viverra euismod. A faucibus purus vehicula in leo at risus. Convallis ipsum sed tristique leo quisque aliquam. '
+        text: 'В середньому навчання у вас займе близько двох місяців.  Щоб досягти результатів у навчанні, вам буде достатньо 6 годин навчання на тиждень. Також, вас буде приєднано до чату підтримки, де ви зможете отримати фокусний фідбек за вашим запитом.  Для ефективності проходення навчальної програми, у вас будуть домашні завдання. Це допоможе вам краще засвоїти теоретичний матеріал та створити свій перший проект, який можна додати до свого портфоліо.'
     },
     {
         id: 3,
         title: 'Чи є можливість отримати індивідуальні консультації від викладача?',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  id accusamus quas dignissimos! Maxime quam laborum, accusamus in non quod odit est recusandae, eaque omnis aliquid! Corrupti maiores placeat ea explicabo id accusamus quas dignissimos! Maxime qu'
+        text: 'У нас є індивідуальні уроки та консультації з викладачами. Ви можете навчатися в зручному для вас форматі та отримати відповіді на всі свої запитання в особистій бесіді з викладачем. Крім того, ви отримаєте запис своїх лекцій або розбору проекту.'
     },
     {
         id: 4,
         title: 'Чи отримаю я сертифікат після завершення курсу?',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maiores placeat ea explicabo id accusamus quas dignissimos! Maxime qu id accusamus quas dignissimos! Maxime quam laborum, accusamus in non quod odit est recusandae, eaque omnis aliquid! Corrupti maiores placeat ea explicabo id accusamus quas dignissimos! Maxime quid accusamus quas dignissimos! Maxime quam laborum, accusamus in non quod odit est recusandae, eaque omnis aliquid! Corrupti maiores placeat ea explicabo id accusamus quas dignissimos! Maxime qu'
+        text: 'Після завершення навчання ви отримаєте сертифікат міжнародного зразка від компанії Autodesk. Цей сертифікат є іменним і має унікальний номер, за яким можна перевірити вашу кваліфікацію як спеціаліста з проектування в Revit.'
     },
     {
         id: 5,
         title: 'Чи можу я отримати доступ до матеріалів після завершення курсу?',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quam laborum, accusamus in non quod odit est recusandae, eaque omnis aliquid! Lorem ipsum dolor sit amet consectetur. Dui semper tempus fringilla velit. Integer bibendum ornare libero mauris. Cursus purus quam et ipsum diam. Non in scelerisque in est quam viverra interdum arcu morbi. Amet ac aenean quam malesuada libero amet et. '
+        text: 'По завершенні курсу всі матеріали, шаблони, конспекти та сімейства залишаються у вас. Вам не потрібно купувати додаткові матеріали, оскільки ми все підготували та відсортували у зручному порядку для вашої роботи.'
     },
     {
         id: 6,
         title: 'Чи потрібно мені мати спеціальне обладнання для курсу?',
-        text: 'Corrupti maiores placeat ea explicabo id accusamus quas dignissimos! Corrupti maiores placeat ea explicabo id accusamus quas dignissimos! Maxime qu Corrupti maiores placeat ea explicabo id accusamus quas dignissimos! Maxime qu'
+        text: 'Для проектування в Revit вам знадобиться комп’ютер або ноутбук з такими параметрами: Операційна система: Windows 10 або новіша; Процесор: Мультипроцесорний, рекомендовано Intel i5 або AMD Ryzen 5; Оперативна пам’ять: Мінімум 8 ГБ (рекомендується 16 ГБ); Графічна карта: Дискретна графіка з підтримкою DirectX 11, наприклад, NVIDIA GeForce або AMD Radeon; Місце на диску: Щонайменше 30 ГБ вільного місця. Ці параметри забезпечать комфортну роботу з програмою.'
     },
 ]

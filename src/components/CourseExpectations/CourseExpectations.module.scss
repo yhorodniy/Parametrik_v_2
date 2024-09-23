@@ -27,6 +27,7 @@
       padding: 24px;
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       & h3 {
         color: #010b1f;
@@ -77,6 +78,36 @@
       &.secondImg {
         background-image: url('/img/expectations-logo-2.png');
         grid-area: secondimg;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 981px) {
+  .courseExpectations {
+    & .expectationsList {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+        "firstimg first"
+        "second third"
+        "fourth secondimg";
+    }
+  }
+}
+@media (max-width: 581px) {
+  .courseExpectations {
+    & .expectationsList {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "first"
+        "second"
+        "third"
+        "fourth";
+      & .imgWrapper {
+        display: none;
       }
     }
   }

@@ -28,12 +28,13 @@
                 border: 1px solid #F4F4F4;
                 background: #FFF;
                 box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
-                padding: 5%;
-                display: flex;
+                padding: 2%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
                 gap: 24px;
 
                 & img {
-                    max-width: 30%;
+                    width: 100%;
                     border-radius: 12px;
                 }
 
@@ -101,6 +102,22 @@
         & .relatedCoursesContainer {
             & .relatedCoursesList {
                 & li {
+                    grid-template-columns: 2fr 1fr;
+                    grid-template-rows: 1fr max-content;
+                    grid-template-areas: 
+                        "link div"
+                        "link button";
+                    & a {
+                        grid-area: link;
+                    }
+                    & > div {
+                        grid-area: div;
+                    }
+                    & > button {
+                        grid-area: button;
+                        align-self: flex-start;
+                        justify-self: flex-start;
+                    }
                     & h3 {
                         line-height: 130%;
                     }
@@ -121,7 +138,7 @@
             & .relatedCoursesList {
                 & li {
                     & p {
-                        font-size: 14px;
+                        font-size: 12px;
                     }
                 }
             }
