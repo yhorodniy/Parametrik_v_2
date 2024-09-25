@@ -22,7 +22,7 @@ const Instructor: React.FC = () => {
               ))}
             </ul>
             <div className={styles.teacherInfo}>
-              <img src="/img/teacher-photo.png" alt="Teacher" />
+              <img src="/img/teacher-2.png" alt="Teacher" />
               <div className={styles.teacherInfoContent}>
                 <h4>Захар Вітик</h4>
                 <p className={styles.position}>Тор-рейтинговий фрілансер на <span>Upwork</span></p>

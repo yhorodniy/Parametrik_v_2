@@ -10,7 +10,7 @@
         background: #FDFDFD;
         box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
         border-radius: 12px;
-        padding: 3.75rem 2rem;
+        padding: 5%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -24,7 +24,13 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 0 1.5rem;
+                padding: 10%;
+
+                & img {
+                    width: 50%;
+                    max-width: 60px;
+                    height: auto;
+                }
     
                 & h3 {
                     text-align: center;
@@ -33,6 +39,47 @@
                 & p {
                     text-align: center;
                     color: #959595;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .courseAdvantages {
+        & .courseAdvantagesContainer {
+            & .advantagesList {
+                & .advantageItem {
+                    & h3 {
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// @media (max-width: 768px) {
+//     .courseAdvantages {
+//         & .courseAdvantagesContainer {
+//             & .advantagesList {
+//                 & .advantageItem {
+//                     & h3 {
+//                         line-height: normal;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+@media (max-width: 481px) {
+    .courseAdvantages {
+        & .courseAdvantagesContainer {
+            & .advantagesList {
+                & .advantageItem {
+                    & h3 {
+                        line-height: normal;
+                    }
                 }
             }
         }

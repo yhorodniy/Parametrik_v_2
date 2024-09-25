@@ -16,6 +16,58 @@ interface RelatedCourse {
 
 export const relatedCoursesList: RelatedCourse[] = [
     {
+        id: 6,
+        img: '/img/relatedCourses/related_course_6.png',
+        url: 'https://parametric.center/courses/new-revit-architecture/',
+        title: 'Revit Architecture',
+        lessons: '50 Занять',
+        price: '15 900,00 ₴',
+        coach: {
+            photo: '/img/relatedCourses/related_course_teacher-2.png',
+            name: 'Захар',
+            position: 'Викладач'
+        }
+    },
+    {
+        id: 7,
+        img: '/img/relatedCourses/related_course_7.png',
+        url: 'https://parametric.center/courses/new-revit-structure/',
+        title: 'Revit Structure',
+        lessons: '58 Занять',
+        price: '14 900,00 ₴',
+        coach: {
+            photo: '/img/relatedCourses/related_course_teacher-2.png',
+            name: 'Захар',
+            position: 'Викладач'
+        }
+    },
+    {
+        id: 10,
+        img: '/img/relatedCourses/related_course_10.png',
+        url: 'https://parametric.center/courses/revit-mep-2024/',
+        title: 'Revit MEP 2024',
+        lessons: '27 Занять',
+        price: '15 900,00 ₴',
+        coach: {
+            photo: '/img/relatedCourses/related_course_teacher-1.jpg',
+            name: 'Сергій',
+            position: 'Викладач'
+        }
+    },
+    {
+        id: 3,
+        img: '/img/relatedCourses/related_course_3.png',
+        url: 'https://parametric.center/courses/autodesk-revit-family-creation/',
+        title: 'Autodesk Revit Family Creation',
+        lessons: '43 Заняття',
+        price: '9 900,00 ₴',
+        coach: {
+            photo: '/img/relatedCourses/related_course_teacher-2.png',
+            name: 'Захар',
+            position: 'Викладач'
+        }
+    },
+    {
         id: 1,
         img: '/img/relatedCourses/related_course_1.png',
         url: 'https://parametric.center/courses/autodesk-autocad/',
@@ -38,19 +90,6 @@ export const relatedCoursesList: RelatedCourse[] = [
         coach: {
             photo: '/img/relatedCourses/related_course_teacher-3.png',
             name: 'Маріян',
-            position: 'Викладач'
-        }
-    },
-    {
-        id: 3,
-        img: '/img/relatedCourses/related_course_3.png',
-        url: 'https://parametric.center/courses/autodesk-revit-family-creation/',
-        title: 'Autodesk Revit Family Creation',
-        lessons: '43 Заняття',
-        price: '9 900,00 ₴',
-        coach: {
-            photo: '/img/relatedCourses/related_course_teacher-2.png',
-            name: 'Захар',
             position: 'Викладач'
         }
     },
@@ -81,32 +120,6 @@ export const relatedCoursesList: RelatedCourse[] = [
         }
     },
     {
-        id: 6,
-        img: '/img/relatedCourses/related_course_6.png',
-        url: 'https://parametric.center/courses/new-revit-architecture/',
-        title: 'Revit Architecture',
-        lessons: '50 Занять',
-        price: '15 900,00 ₴',
-        coach: {
-            photo: '/img/relatedCourses/related_course_teacher-2.png',
-            name: 'Захар',
-            position: 'Викладач'
-        }
-    },
-    {
-        id: 7,
-        img: '/img/relatedCourses/related_course_7.png',
-        url: 'https://parametric.center/courses/new-revit-structure/',
-        title: 'Revit Structure',
-        lessons: '58 Занять',
-        price: '14 900,00 ₴',
-        coach: {
-            photo: '/img/relatedCourses/related_course_teacher-2.png',
-            name: 'Захар',
-            position: 'Викладач'
-        }
-    },
-    {
         id: 8,
         img: '/img/relatedCourses/related_course_8.png',
         url: 'https://parametric.center/courses/point-cloud-in-revit/',
@@ -129,19 +142,6 @@ export const relatedCoursesList: RelatedCourse[] = [
         coach: {
             photo: '/img/relatedCourses/related_course_teacher-2.png',
             name: 'Захар',
-            position: 'Викладач'
-        }
-    },
-    {
-        id: 10,
-        img: '/img/relatedCourses/related_course_10.png',
-        url: 'https://parametric.center/courses/revit-mep-2024/',
-        title: 'Revit MEP 2024',
-        lessons: '27 Занять',
-        price: '15 900,00 ₴',
-        coach: {
-            photo: '/img/relatedCourses/related_course_teacher-1.jpg',
-            name: 'Сергій',
             position: 'Викладач'
         }
     },
