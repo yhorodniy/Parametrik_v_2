@@ -4,6 +4,7 @@ import { footerMenuList } from "./footerMenuList";
 import FacebookIcon from "../Header/Icons/Facebook";
 import InstagramIcon from "../Header/Icons/Instagram";
 import YoutubeIcon from "../Header/Icons/Youtube";
+import TelegramIcon from "../Header/Icons/Telegram";
 
 const Footer: React.FC = () => {
   return (
@@ -38,6 +39,7 @@ const Footer: React.FC = () => {
             <a href="https://www.facebook.com/parametric.center/"><FacebookIcon /></a>
             <a href="https://www.instagram.com/study_center_parametric/"><InstagramIcon /></a>
             <a href="https://www.youtube.com/channel/UC5Xay0Tw3sii-TFG6w_Tx8w"><YoutubeIcon /></a>
+            <a href="https://t.me/RevitTC"><TelegramIcon /></a>
           </div>
         </div>
       </div>
