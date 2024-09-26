@@ -4,6 +4,8 @@ import styles from "./GraduateWorks.module.scss";
 import Annotation from "../helpers/Annotation/Annotation";
 
 const GraduateWorks: React.FC = () => {
+  const [ currentFullImg, setCurrentFullImg ] = useState<number | null>(null);
+
   const worksList: string[] = [
     "/img/graduatedWorks/work_1.png",
     "/img/graduatedWorks/work_2.png",
@@ -68,7 +70,7 @@ const GraduateWorks: React.FC = () => {
 
             <ul className={styles.worksList} ref={worksListRef}>
               {worksList.map((el, index) => (
-                <li className={styles.workSlide} key={index}>
+                <li className={styles.workSlide} key={index} onClick={() => setCurrentFullImg(index)}>
                   <img src={el} alt="#" />
                 </li>
               ))}
@@ -77,6 +79,11 @@ const GraduateWorks: React.FC = () => {
           </div>
         </div>
       </div>
+      {currentFullImg !== null && (
+        <div className={styles.fullImg} onClick={() => setCurrentFullImg(null)}>
+          <img src={worksList[currentFullImg]} alt="" />
+        </div>
+      )}
     </section>
   );
 };

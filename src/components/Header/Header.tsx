@@ -23,17 +23,17 @@ const Header: React.FC = () => {
     {
       icon: <PhoneIcon />,
       url: 'tel:+380931700502',
-      text: '0931700502'
+      text: '+380931700502'
     },
     {
       icon: <PhoneIcon />,
       url: 'tel:+380679903040',
-      text: '0679903040'
+      text: '+380679903040'
     },
     {
       icon: <PhoneIcon />,
       url: 'tel:+380504507122',
-      text: '0504507122'
+      text: '+380504507122'
     },
     {
       icon: <FacebookIcon />,

@@ -64,6 +64,7 @@ button {
     letter-spacing: -0.02rem;
     width: max-content;
     height: max-content;
+    cursor: default;
 }
 
 .main-btn {
