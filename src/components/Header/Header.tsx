@@ -9,6 +9,7 @@ import DropdownArrow from "./Icons/DropdownArrow";
 
 import styles from "./Header.module.scss";
 import useBreakpoint from "../../customHooks/UseBreakpoint";
+import TelegramIcon from "./Icons/Telegram";
 
 
 const Header: React.FC = () => {
@@ -48,6 +49,11 @@ const Header: React.FC = () => {
       icon: <YoutubeIcon />,
       url: 'https://www.youtube.com/channel/UC5Xay0Tw3sii-TFG6w_Tx8w',
       text: 'Youtube'
+    },
+    {
+      icon: <TelegramIcon />,
+      url: 'https://t.me/RevitTC',
+      text: 'Telegram'
     },
   ]
 
