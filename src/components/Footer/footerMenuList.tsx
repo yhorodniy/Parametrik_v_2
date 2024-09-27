@@ -14,23 +14,23 @@ export const footerMenuList: MenuItem[] = [
         elements: [
             {
                 name: 'Головна',
-                url: '/'
+                url: 'https://parametric.center/'
             },
             {
                 name: 'Про нас',
-                url: '/about-us'
+                url: 'https://parametric.center/about-us'
             },
             {
                 name: 'Навчальні курси',
-                url: '/courses'
+                url: 'https://parametric.center/courses'
             },
             {
                 name: 'Новини',
-                url: '/news-feed'
+                url: 'https://parametric.center/news-feed'
             },
             {
                 name: 'Бібліотека',
-                url: '/#'
+                url: 'https://parametric.center/#'
             },
         ]
     },
@@ -39,39 +39,39 @@ export const footerMenuList: MenuItem[] = [
         elements: [
             {
                 name: 'Autodesk Revit Architecture',
-                url: '/autodesk-revit-architecture'
+                url: 'https://parametric.center/autodesk-revit-architecture'
             },
             {
                 name: 'Autodesk Revit Interior Design',
-                url: '/autodesk-revit-interior-design'
+                url: 'https://parametric.center/autodesk-revit-interior-design'
             },
             {
                 name: 'Autodesk Revit MEP',
-                url: '/autodesk-revit-mep'
+                url: 'https://parametric.center/autodesk-revit-mep'
             },
             {
                 name: 'Autodesk AutoCAD',
-                url: '/autodesk-autocad'
+                url: 'https://parametric.center/autodesk-autocad'
             },
             {
                 name: 'Autodesk Revit Structure',
-                url: '/autodesk-revit-structure'
+                url: 'https://parametric.center/autodesk-revit-structure'
             },
             {
                 name: 'Autodesk Robot',
-                url: '/autodesk-robot'
+                url: 'https://parametric.center/autodesk-robot'
             },
             {
                 name: 'Autodesk Civil 3D',
-                url: '/autodesk-civil-3d'
+                url: 'https://parametric.center/autodesk-civil-3d'
             },
             {
                 name: 'Autodesk DYNAMO',
-                url: '/autodesk-dynamo'
+                url: 'https://parametric.center/autodesk-dynamo'
             },
             {
                 name: 'Autodesk Navisworks',
-                url: '/autodesk-navisworks'
+                url: 'https://parametric.center/autodesk-navisworks'
             },
         ]
     },
@@ -80,11 +80,11 @@ export const footerMenuList: MenuItem[] = [
         elements: [
             {
                 name: 'Політика конфіденційності',
-                url: '/privacy-policy'
+                url: 'https://parametric.center/privacy-policy'
             },
             {
                 name: 'Публічний договір',
-                url: '/public-agreement'
+                url: 'https://parametric.center/public-agreement'
             }
         ]
     },

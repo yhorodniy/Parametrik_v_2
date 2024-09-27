@@ -81,17 +81,17 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={classNames("container", styles.headerContainer)}>
         <div className={styles.headerLogo}>
-          <a href="/" rel="home">
+          <a href="https://parametric.center/" rel="home">
             <img src="/img/logo.png" alt="Logo" />
           </a>
         </div>
         <nav>
           <ul className={styles.navigationMenu}>
             <li>
-              <a href="/about-us">Про нас</a>
+              <a href="https://parametric.center/about-us">Про нас</a>
             </li>
             <li>
-              <a href="/courses">Онлайн курси</a>
+              <a href="https://parametric.center/courses">Онлайн курси</a>
             </li>
             <li>
               <div onClick={toggleServiceSubmenu} style={{display:"flex", alignItems:'center', gap:'3px'}}>
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
               <div className={styles.servisesSubmenu} style={{display: isServises ? 'block' : 'none'}}>
                 <ul>
                   <li>
-                    <a href="/bim-audit">Аудит та ВІМ вкорінення</a>
+                    <a href="https://parametric.center/bim-audit">Аудит та ВІМ вкорінення</a>
                   </li>
                   <li>
                     <div onClick={() => setIsCourses(!isCourses)} style={{display:"flex", alignItems:'center', gap:'3px'}}>
@@ -111,31 +111,31 @@ const Header: React.FC = () => {
                     <div className={styles.servisesSubmenuCourses} style={{display: isCourses ? 'flex' : 'none'}}>
                       <ul>
                         <li>
-                          <a href="/autodesk-revit-architecture">Autodesk Revit Architecture</a>
+                          <a href="https://parametric.center/autodesk-revit-architecture">Autodesk Revit Architecture</a>
                         </li>
                         <li>
-                          <a href="/autodesk-revit-interior-design">Autodesk Revit Interior Design</a>
+                          <a href="https://parametric.center/autodesk-revit-interior-design">Autodesk Revit Interior Design</a>
                         </li>
                         <li>
-                          <a href="/autodesk-revit-mep">Autodesk Revit MEP</a>
+                          <a href="https://parametric.center/autodesk-revit-mep">Autodesk Revit MEP</a>
                         </li>
                         <li>
-                          <a href="/autodesk-autocad">Autodesk AutoCAD</a>
+                          <a href="https://parametric.center/autodesk-autocad">Autodesk AutoCAD</a>
                         </li>
                         <li>
-                          <a href="/autodesk-revit-structure">Autodesk Revit Structure</a>
+                          <a href="https://parametric.center/autodesk-revit-structure">Autodesk Revit Structure</a>
                         </li>
                         <li>
-                          <a href="/autodesk-robot">Autodesk Robot</a>
+                          <a href="https://parametric.center/autodesk-robot">Autodesk Robot</a>
                         </li>
                         <li>
-                          <a href="/autodesk-civil-3d">Autodesk Civil 3D</a>
+                          <a href="https://parametric.center/autodesk-civil-3d">Autodesk Civil 3D</a>
                         </li>
                         <li>
-                          <a href="/autodesk-dynamo">Autodesk DYNAMO</a>
+                          <a href="https://parametric.center/autodesk-dynamo">Autodesk DYNAMO</a>
                         </li>
                         <li>
-                          <a href="/autodesk-navisworks">Autodesk Navisworks</a>
+                          <a href="https://parametric.center/autodesk-navisworks">Autodesk Navisworks</a>
                         </li>
                       </ul>
                     </div>
@@ -156,7 +156,7 @@ const Header: React.FC = () => {
               </div>
             </li>
             <li>
-              <a href="/news-feed">Новини</a>
+              <a href="https://parametric.center/news-feed">Новини</a>
             </li>
             <li>
               <div onClick={toggleContactSubmenu} style={{display:"flex", alignItems:'center', gap:'3px'}}>
@@ -185,8 +185,8 @@ const Header: React.FC = () => {
             <span className={styles.separatop} />
           </div>
           <div>
-            <a href='/wp-login' className={styles.signIn}>Вхід</a>
-            <a href='/register' className={styles.signUp}>Реєстрація</a>
+            <a href='https://parametric.center/wp-login' className={styles.signIn}>Вхід</a>
+            <a href='https://parametric.center/register' className={styles.signUp}>Реєстрація</a>
           </div>
         </div>
       </div>
