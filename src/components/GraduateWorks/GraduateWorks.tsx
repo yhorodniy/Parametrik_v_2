@@ -7,18 +7,14 @@ const GraduateWorks: React.FC = () => {
   const [ currentFullImg, setCurrentFullImg ] = useState<number | null>(null);
 
   const worksList: string[] = [
-    "/img/graduatedWorks/work_1.png",
-    "/img/graduatedWorks/work_2.png",
-    "/img/graduatedWorks/work_3.png",
-    "/img/graduatedWorks/work_1.png",
-    "/img/graduatedWorks/work_2.png",
-    "/img/graduatedWorks/work_3.png",
-    "/img/graduatedWorks/work_1.png",
-    "/img/graduatedWorks/work_2.png",
-    "/img/graduatedWorks/work_3.png",
-    "/img/graduatedWorks/work_1.png",
-    "/img/graduatedWorks/work_2.png",
-    "/img/graduatedWorks/work_3.png",
+    "/img/graduatedWorks/work_1.JPG",
+    "/img/graduatedWorks/work_2.JPG",
+    "/img/graduatedWorks/work_3.JPG",
+    "/img/graduatedWorks/work_4.JPG",
+    "/img/graduatedWorks/work_5.JPG",
+    "/img/graduatedWorks/work_6.JPG",
+    "/img/graduatedWorks/work_7.JPG",
+    "/img/graduatedWorks/work_8.JPG",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -58,15 +58,15 @@ const Testimonials: React.FC = () => {
                 <Quote />
                 <p>{testimonialsList[currentComment].comment}</p>
               </div>
-            </div>
-            <div className={styles.buttons}>
-              <button className={styles.prev} onClick={prevSlides}>
-                <LefttArrow />
-              </button>
-              <span>{currentComment + 1}/{totalComments}</span>
-              <button className={styles.next} onClick={nextSlides}>
-                <RightArrow />
-              </button>
+              <div className={styles.buttons}>
+                <button className={styles.prev} onClick={prevSlides}>
+                  <LefttArrow />
+                </button>
+                <span>{currentComment + 1}/{totalComments}</span>
+                <button className={styles.next} onClick={nextSlides}>
+                  <RightArrow />
+                </button>
+              </div>
             </div>
             <div className={styles.advantages}>
               <div className={styles.advantagesItem}>
@@ -74,11 +74,11 @@ const Testimonials: React.FC = () => {
                 <span>Рекомендують нас</span>
               </div>
               <div className={styles.advantagesItem}>
-                <h3>300+</h3>
+                <h3>45+</h3>
                 <span>Випускників курсу</span>
               </div>
               <div className={styles.advantagesItem}>
-                <h3>300+</h3>
+                <h3>500+</h3>
                 <span>Задовлених студентів</span>
               </div>
             </div>

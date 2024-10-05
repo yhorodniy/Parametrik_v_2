@@ -19,11 +19,12 @@
 
     & .testimonialsContent {
         display: grid;
-        grid-template-columns: 5fr 1fr;
+        grid-template-columns: 4fr 1fr;
         gap: 24px;
         position: relative;
 
         & .comment {
+            position: relative;
             padding: 5% 3% 10%;
             border-radius: 12px;
             border: 1px solid #F4F4F4;
@@ -35,6 +36,11 @@
                 align-items: center;
                 gap: 12px;
                 margin-bottom: 32px;
+                
+                & img {
+                    width: 10%;
+                    border-radius: 50%;
+                }
 
                 & h3 {
                     color: #010B1F;
@@ -50,6 +56,7 @@
             }
 
             & .commentContent {
+                position: relative;
 
                 & p {
                     color: #959595;
@@ -57,27 +64,27 @@
                 }
             }
 
-        }
-
-        & .buttons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            position: absolute;
-            bottom: 40px;
-            right: 224px;
-
-            & button {
-                border-radius: 50px;
-                background: #FFFfff;
-                box-shadow: 0px 4px 4px 0px rgba(151, 151, 151, 0.25);
-                padding: 14px;
+            & .buttons {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                gap: 12px;
+                position: absolute;
+                bottom: 10%;
+                right: 5%;
+    
+                & button {
+                    border-radius: 50px;
+                    background: #FFFfff;
+                    box-shadow: 0px 4px 4px 0px rgba(151, 151, 151, 0.25);
+                    padding: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
+
 
         & .advantages {
             display: flex;
@@ -90,8 +97,9 @@
                 background: #95ACD3;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 color: #FFF;
-                padding: 23px 0 23px 12px;
+                padding: 23px 0;
 
                 & h3 {
                     color: #FFFfff;
@@ -99,6 +107,7 @@
                     font-weight: 600;
                     line-height: 120%;
                     letter-spacing: -2.4px;
+                    margin: 0;
                 }
                 & span {
                     font-size: 16px;
@@ -121,10 +130,20 @@
                         font-size: 12px;
                     }
                 }
+                & .buttons {
+                    bottom: 5%;
+                    transform: scale(0.7);
+                }
             }
-            & .buttons {
-                left: 5%;
-                transform: scale(0.8);
+            & .advantages {
+                & .advantagesItem {
+                    & h3 {
+                        font-size: 45px;
+                    }
+                    & span {
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }
@@ -138,9 +157,20 @@
                         font-size: 8px;
                     }
                 }
+                & .buttons {
+                    bottom: 3%;
+                    right: 0;
+                    transform: scale(0.5);
+                }
             }
-            & .buttons {
-                transform: scale(0.5);
+            & .advantages {
+                & .advantagesItem {
+                    & span {
+                        font-size: 10px;
+                        line-height: normal;
+                        letter-spacing: normal;
+                    }
+                }
             }
         }
     }

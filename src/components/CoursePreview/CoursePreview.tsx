@@ -16,11 +16,11 @@ const CoursePreview: React.FC = () => {
 
           <div className={classNames(styles.textAbsolute, styles.left)}>
             <h3>45+</h3>
-            <p>Випускників курсу.</p>
+            <p>Випускників курсу</p>
           </div>
           <div className={classNames(styles.textAbsolute, styles.right)}>
-            <h3>300+</h3>
-            <p>Випускників курсу.</p>
+            <h3>500+</h3>
+            <p>Задовлених студентів</p>
           </div>
           <div className={styles.leftArrow}>
             <CursivArrow direction='right' />

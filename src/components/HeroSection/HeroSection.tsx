@@ -45,8 +45,8 @@ const HeroSection: React.FC = () => {
                   <p>Випускників курсу</p>
                 </div>
                 <div>
-                  <h2>300+</h2>
-                  <p>Випускників курсу</p>
+                  <h2>500+</h2>
+                  <p>Задоволених студентів</p>
                 </div>
               </div>
               <div className={styles.studentsAbsolute}>

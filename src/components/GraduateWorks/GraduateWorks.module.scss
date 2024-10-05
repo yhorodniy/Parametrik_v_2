@@ -67,6 +67,24 @@
     }
 }
 
+.fullImg {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #79797974;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+        height: 70%;
+        border-radius: 12px;
+        width: auto;
+    }
+}
+
 
 @media (max-width: 1200px) {
     .graduateWorksSection {    
