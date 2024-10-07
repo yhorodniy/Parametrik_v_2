@@ -5,11 +5,11 @@ const HeroSection: React.FC = () => {
   const navigation = [
     {
       title: 'Головна',
-      url: '/'
+      url: 'parametric.center/'
     },
     {
       title: 'Курси',
-      url: '/courses'
+      url: 'parametric.center/courses/'
     },
     {
       title: 'Revit Interior Design',
