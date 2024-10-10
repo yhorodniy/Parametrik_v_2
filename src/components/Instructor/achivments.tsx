@@ -1,23 +1,23 @@
 interface Achivement {
-    goal: string,
+    goal: number | string,
     text: string
 }
 
 export const achievements: Achivement[] = [
     {
-      goal: '/img/goal-1.png',
+      goal: 11,
       text: 'Років працюю в архітектурі'
     },
     {
-      goal: '/img/goal-2.png',
+      goal: '45+',
       text: 'Випускників курсу Revit '
     },
     {
-      goal: '/img/goal-3.png',
+      goal: 5,
       text: 'Років навчаю проектантів в Revit'
     },
     {
-      goal: '/img/goal-4.png',
+      goal: 9,
       text: 'Років виконую проекти в Revit'
     },
 ]

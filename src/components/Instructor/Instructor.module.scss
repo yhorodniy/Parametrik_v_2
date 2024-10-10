@@ -22,7 +22,7 @@
         grid-template-columns: 1fr 2fr;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 5%;
 
         & .teacherAchivement {
             display: grid;
@@ -37,11 +37,15 @@
                 background: #ffffff;
                 box-shadow: 0px 4px 10px 0px rgba(226, 226, 226, 0.25);
                 padding: 15%;
-    
-                & img {
-                    max-width: 50%;
-                    height: auto;
-                    border-radius: 12px;
+                
+                & h3 {
+                    margin: 0;
+                    font-size: 65px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 130%; /* 104px */
+                    letter-spacing: -3.2px;
+                    color: #A6C198;
                 }
     
                 & p {
@@ -51,11 +55,6 @@
     
                 &:nth-child(2) {
                     transform: rotate(-4deg);
-                    & img {
-                        transform: scale(1.5);
-                        position: relative;
-                        right: -10px;
-                    }
                 }
             }
         }
@@ -110,6 +109,9 @@
             & .teacherAchivement {
                 grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
                 gap: 3%;
+                & li h3 {
+                    font-size: 55px;
+                }
             }
         }
     }
@@ -117,6 +119,9 @@
 @media (max-width: 991px) {
     .instructor {
         & .teacherContainer {
+            & .teacherAchivement li h3 {
+                font-size: 45px;
+            }
             & .teacherInfo {
                 grid-template-columns: 1fr;
                 padding: 6%;
@@ -129,6 +134,15 @@
         & .teacherContainer {
             & .teacherAchivement {
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+        }
+    }
+}
+@media (max-width: 481px) {
+    .instructor {
+        & .teacherContainer {
+            & .teacherAchivement li h3 {
+                font-size: 30px;
             }
         }
     }

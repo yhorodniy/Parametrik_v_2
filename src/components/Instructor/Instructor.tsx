@@ -16,7 +16,7 @@ const Instructor: React.FC = () => {
             <ul className={styles.teacherAchivement}>
               {achievements.map((el, index) => (
                 <li key={index}>
-                  <img src={el.goal} alt="Goal" />
+                  <h3>{el.goal}</h3>
                   <p>{el.text}</p>
                 </li>
               ))}
